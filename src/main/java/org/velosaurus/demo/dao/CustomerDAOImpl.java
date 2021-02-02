@@ -12,14 +12,8 @@ import java.util.List;
 @Repository
 public class CustomerDAOImpl implements CustomerDAO {
 
-    // Field-Injection (not recommended)
-    /*@Autowired
-    private SessionFactory sessionFactory;
-     */
-
     private SessionFactory sessionFactory;
 
-    // need to inject Hibernate SessionFactory
     @Autowired
     public void CustomerDAO(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
