@@ -28,9 +28,6 @@ public class Customer {
     public Customer() {
     }
 
-
-    // Why ID in the video ????
-    //
     public Customer(String firstName, String lastName, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
