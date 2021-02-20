@@ -14,6 +14,7 @@ public class CustomerDAOImpl implements CustomerDAO {
 
     private SessionFactory sessionFactory;
 
+    // can be injected (is autowired) because bean defined in config class
     @Autowired
     public void CustomerDAO(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;

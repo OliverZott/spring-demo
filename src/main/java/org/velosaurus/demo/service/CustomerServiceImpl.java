@@ -8,6 +8,8 @@ import org.velosaurus.demo.entity.Customer;
 import javax.transaction.Transactional;
 import java.util.List;
 
+// To detect beans automatically,  Spring uses classpath scanning annotations
+// @Service, @Repository, ...
 @Service
 public class CustomerServiceImpl implements CustomerService {
 
